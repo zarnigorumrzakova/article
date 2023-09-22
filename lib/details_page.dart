@@ -26,7 +26,7 @@ class DetailsPage extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [BoxShadow(blurRadius: 8, spreadRadius: 2)],
-                color: Colors.white70),
+                color: Colors.green[300]),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -35,7 +35,7 @@ class DetailsPage extends StatelessWidget {
                   style: const TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 22,
-                      color: Colors.blue),
+                      color: Colors.green),
                 ),
                 Text(
                   '${article.body}',

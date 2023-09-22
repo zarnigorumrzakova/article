@@ -68,7 +68,6 @@ class _HomePageState extends State<HomePage> {
         child: CircularProgressIndicator(),
       )
           : SmartRefresher(
-        enablePullUp: true,
         onLoading: _initialFetchArticles,
         onRefresh: refreshArticle,
         controller: refreshController,
@@ -95,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                           BoxShadow(
                               blurRadius: 7,
                               spreadRadius: 4,
-                              color: Colors.grey)
+                              color: Colors.greenAccent )
                         ]),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                             style: const TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.w800,
-                                color: Colors.blue)),
+                                color: Colors.green)),
                         Text(
                           '${_article[index].title}',
                           style: const TextStyle(
